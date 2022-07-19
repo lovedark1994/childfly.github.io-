@@ -3810,7 +3810,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.SubVar,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.System.Cnds.TriggerOnce,
-		C3.Plugins.Text.Acts.SetVisible,
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Plugins.Audio.Acts.Stop
 	];
@@ -4005,11 +4004,7 @@ self.C3_ExpressionFuncs = [
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0(800, 1200);
 		},
-		() => 10,
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => v0.GetValue();
-		}
+		() => 10
 ];
 
 
